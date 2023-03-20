@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carousel by Al Noman</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 2rem;
+            padding: 0 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Carousel By Al Noman</h1>
+    <div class="flex">
+        <button onclick="changeImg('prev')">&lt;</button>
+        <div>
+            <img id="img" src="./imge/img1.jpg" alt="">
+        </div>
+        <button onclick="changeImg('next')">&gt;</button>
+    </div>
+    <script src="./js/slider.js"></script>
+</body>
+
+</html>
